@@ -3,7 +3,7 @@ package tsec.oauth2.provider
 import org.scalatest.Matchers._
 import org.scalatest._
 
-class OAuthErrorsSpec extends flatspec.AnyFlatSpec {
+class OAuthErrorsSpec extends FlatSpec {
 
   behavior of "OAuth Error Handling RFC 6749 Section 5.2"
 

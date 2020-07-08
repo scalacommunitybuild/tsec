@@ -5,7 +5,7 @@ import java.time.Instant
 import cats.effect.IO
 import cats.syntax.either._
 import org.scalatest.OptionValues
-import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.FlatSpec
 import org.scalatest.Matchers._
 import tsec.oauth2.provider.ValidatedRequest.ValidatedRefreshToken
 import tsec.oauth2.provider.grantHandler.RefreshTokenGrantHandler
@@ -13,7 +13,7 @@ import tsec.oauth2.provider.grantHandler.RefreshTokenHandler
 
 import scala.concurrent.duration._
 
-class RefreshTokenGrantHandlerSpec extends AnyFlatSpec with OptionValues {
+class RefreshTokenGrantHandlerSpec extends FlatSpec with OptionValues {
 
   it should "handle request" in {
     val dataHandler = new RefreshTokenHandler[IO, MockUser] {

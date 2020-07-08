@@ -7,8 +7,7 @@ object Dependencies {
     val catsV         = "2.1.0"        //https://github.com/typelevel/cats/releases
     val bouncyCastleV = "1.64"         //https://github.com/bcgit/bc-java/releases
     val sCryptV       = "1.4.0"        //https://github.com/wg/scrypt/releases
-    val scalaTestV    = "3.1.0"        //https://github.com/scalatest/scalatest/releases
-    val scalaTestPlusV= "3.1.0.0"      //https://github.com/scalatest/scalatestplus-scalacheck
+    val scalaTestV    = "3.0.8"        //https://github.com/scalatest/scalatest/releases
     val http4sV       = "0.21.0"       //https://github.com/http4s/http4s/releases
     val scalacheckV   = "1.14.2"       //https://github.com/typelevel/scalacheck/releases
     val commonsCodecV = "1.14"         //https://github.com/apache/commons-codec/releases
@@ -22,7 +21,6 @@ object Dependencies {
     val cats               = "org.typelevel"    %% "cats-core"            % Versions.catsV
     val sCrypt             = "com.lambdaworks"  % "scrypt"                % Versions.sCryptV
     val scalaTest          = "org.scalatest"    %% "scalatest"            % Versions.scalaTestV % "test"
-    val scalaTestPlus      = "org.scalatestplus"%% "scalacheck-1-14"      % Versions.scalaTestPlusV % "test"
     val BC                 = "org.bouncycastle" % "bcprov-jdk15on"        % Versions.bouncyCastleV
     val circeCore          = "io.circe"         %% "circe-core"           % Versions.circeV
     val circeGeneric       = "io.circe"         %% "circe-generic"        % Versions.circeV

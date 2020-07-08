@@ -8,7 +8,7 @@ import org.scalatest.Matchers._
 
 import scala.concurrent.duration._
 
-class ProtectedResourceSpec extends flatspec.AnyFlatSpec {
+class ProtectedResourceSpec extends FlatSpec {
   val pureProtectedResourceHandler = new ProtectedResourceHandler[IO, MockUser] {
 
     override def findAccessToken(token: String): IO[Option[AccessToken]] =
